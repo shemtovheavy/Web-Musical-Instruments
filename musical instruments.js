@@ -32,10 +32,19 @@ var fluteInstrument = {
 
   function initializeInstrumentsArray()
   {
-      allInstruments = new Array(6);
+      allInstruments = new Array();
       allInstruments.push(fluteInstrument);
       allInstruments.push(harmonicaInstrument);
       allInstruments.push(trumpetInstrument);
+      return allInstruments;
   }
+  //buildCards();
   
-  
+  //let script = document.createElement('script');
+
+// can load any script, from any domain
+//script.src = "https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"
+//document.head.append(script);
+
+//script.onload = buildCards();
+  //document.getElementById("textCenter").addEventListener("load", buildCards);
