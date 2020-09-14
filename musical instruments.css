@@ -1,0 +1,22 @@
+body {
+    background-color: #e7dce9da
+}
+
+.container {
+    margin-top: 100px
+}
+
+.img-fluid{
+    height: 200;
+    width: 200;
+}
+
+.sticky {
+    position: fixed;
+    right: 0;
+}
+
+.selectpicker {
+    background-color: gray;
+    color: white;
+}
