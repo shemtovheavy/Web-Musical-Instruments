@@ -14,34 +14,35 @@
         <a href="#order">My Orders</a>
         <a href="#contact">Contact</a>
         </div>
-        <div class="sticky">
-            <select onclick="onSelectedOption();" class="selectpicker" id="selectpicker">
-                <option value="" disabled selected hidden>type of musical instrument</option>
-            </select>
-            <h1>filter</h1>
-            <div class="md-form active-cyan-2 mb-3">
-                <input onkeyup="onSearch();" id="search" class="form-control" type="text" placeholder="Search musical instrument" aria-label="Search">
-            </div>
-            <h3>price</h3>
-            <div class="checkboxDiv">
-                <label><input onclick="onCheckBoxChecked();" class="checkbox" type="checkbox" value="">untill 500 ILS</label>
-            </div>
-            <div class="checkboxDiv">
-                <label><input onclick="onCheckBoxChecked();" class="checkbox" type="checkbox" value="">500-1000 ILS</label>
-            </div>
-            <div class="checkboxDiv">
-                <label><input onclick="onCheckBoxChecked();" class="checkbox" type="checkbox" value="">1000-1500 ILS</label>
-            </div>
-            <div class="checkboxDiv">
-                <label><input onclick="onCheckBoxChecked();" class="checkbox" type="checkbox" value="">1500-2000 ILS</label>
-            </div>
-            <div class="checkboxDiv">
-                <label><input onclick="onCheckBoxChecked();" class="checkbox" type="checkbox" value="">2000 and above</label>
-            </div>
-        </div>
         <div class="text-center">
             <div class="container" id="container">
-
+                <div class='row-lg-2'>
+                    <div class='col-lg-2' id="menu">
+                            <select onclick="onSelectedOption();" class="selectpicker" id="selectpicker">
+                            <option value="" disabled selected hidden>type of musical instrument</option>
+                            </select>
+                            <h1>filter</h1>
+                            <div class="lg-form active-cyan-2 lg-3">
+                                <input onkeyup="onSearch();" id="search" class="form-control" type="text" placeholder="Search musical instrument" aria-label="Search">
+                            </div>
+                            <h3>price</h3>
+                            <div class="checkboxDiv">
+                                <label><input onclick="onCheckBoxChecked();" class="checkbox" type="checkbox" value="">untill 500 ILS</label>
+                            </div>
+                            <div class="checkboxDiv">
+                                <label><input onclick="onCheckBoxChecked();" class="checkbox" type="checkbox" value="">500-1000 ILS</label>
+                            </div>
+                            <div class="checkboxDiv">
+                                <label><input onclick="onCheckBoxChecked();" class="checkbox" type="checkbox" value="">1000-1500 ILS</label>
+                            </div>
+                            <div class="checkboxDiv">
+                                <label><input onclick="onCheckBoxChecked();" class="checkbox" type="checkbox" value="">1500-2000 ILS</label>
+                            </div>
+                            <div class="checkboxDiv">
+                                <label><input onclick="onCheckBoxChecked();" class="checkbox" type="checkbox" value="">2000 and above</label>
+                            </div>
+                    </div>
+                </div>
             </div>
         </div>
         <script type='text/javascript' > 
