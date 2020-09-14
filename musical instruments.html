@@ -4,16 +4,18 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="musical instruments.css">
     </head>
-    <body onload="buildCards();">
+    <body onload="initailSite();">
         <div class="sticky">
-            <select class="selectpicker">
+            <select class="selectpicker" id="selectpicker">
                 <option value="" disabled selected hidden>type of musical instrument</option>
+                <!--
                 <option>Flute</option>
                 <option>Harmonica</option>
                 <option>Trumpet</option>
                 <option>Trombone</option>
                 <option>Clarinet</option>
                 <option>Violin</option>
+                -->
             </select>
             <h1>filter</h1>
             <div class="md-form active-cyan-2 mb-3">
@@ -37,103 +39,15 @@
             </div>
         </div>
         <div class="text-center" id="textCenter">
-            <!--
-            <div class="container">
-                <div class="row pt-4">
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">Flute</h4>
-                            </div>
-                            <div class="card-body">
-                                <img src="pictures/flute.jpg" class="img-fluid" alt="Responsive image">
-                                <h1><b>50 </b><small class="text-muted">ILS </small></h1>
-                                <ul class="list-unstyled mt-3 mb-4">
-                                    <li>nice flute</li>
-                                </ul> <button type="button" class="btn btn-lg btn-block btn-primary">add to chart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">Harmonica</h4>
-                            </div>
-                            <div class="card-body">
-                                <img src="pictures/harmonica.jpg" class="img-fluid" alt="Responsive image">
-                                <h1><b>35</b><small class="text-muted"> ILS</small></h1>
-                                <ul class="list-unstyled mt-3 mb-4">
-                                    <li>nice harmonica</li>
-                                </ul> <button type="button" class="btn btn-lg btn-block btn-primary">add to chart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">Trumpet</h4>
-                            </div>
-                            <div class="card-body">
-                                <img src="pictures/trumpet.jpg" class="img-fluid" alt="Responsive image" >
-                                <h1><b>1500 </b><small class="text-muted">ILS </small></h1>
-                                <ul class="list-unstyled mt-3 mb-4">
-                                    <li>long trumpet</li>
-                                </ul> <button type="button" class="btn btn-lg btn-block btn-primary">add to chart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row pt-4">
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">Trombone</h4>
-                            </div>
-                            <div class="card-body">
-                                <img src="pictures/trombone.png" class="img-fluid" alt="Responsive image">
-                                <h1><b>2400 </b><small class="text-muted">ILS</small></h1>
-                                <ul class="list-unstyled mt-3 mb-4">
-                                    <li>small trombone</li>
-                                </ul> <button type="button" class="btn btn-lg btn-block btn-primary">add to chart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">Clarinet</h4>
-                            </div>
-                            <div class="card-body">
-                                <img src="pictures/clarinet.gif" class="img-fluid" alt="Responsive image">
-                                <h1><b>1400 </b><small class="text-muted">ILS </small></h1>
-                                <ul class="list-unstyled mt-3 mb-4">
-                                    <li>loud clarinet</li>
-                                </ul> <button type="button" class="btn btn-lg btn-block btn-primary">add to chart</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card mb-4 box-shadow">
-                            <div class="card-header">
-                                <h4 class="my-0 font-weight-normal">Violin</h4>
-                            </div>
-                            <div class="card-body">
-                                <img src="pictures/violin.jpg" class="img-fluid" alt="Responsive image">
-                                <h1><b>2300 </b><small class="text-muted">ILS </small></h1>
-                                <ul class="list-unstyled mt-3 mb-4">
-                                    <li>small violin</li>
-                                </ul> <button type="button" class="btn btn-lg btn-block btn-primary">add to chart</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        -->
         </div>
+        <script type='text/javascript' > 
+            let allInstruments; 
+          </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="musical instruments.js" type="text/javascript"></script>
         <script src="buildCards.js" type="text/javascript"></script>
+        <script src="createOptions.js" type="text/javascript"></script>
     </body>
 </html>

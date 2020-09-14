@@ -1,13 +1,9 @@
 function buildCards() {
     let allInstruments = initializeInstrumentsArray();
-    console.log(allInstruments);
     var textCenter = document.getElementById("textCenter");
     var html = "<div class='container'><div class='row pt-4'>";
     for (var i = 0; i < allInstruments.length; i++) {
         var currentInstrument = allInstruments[i];
-        if (typeof(currentInstrument) == 'undefined') {
-            console.log(currentInstrument);
-          }
         html += "<div class='col-md-4'><div class='card mb-4 box-shadow'><div class='card-header'>";
         html += "<h4 class='my-0 font-weight-normal'>" + currentInstrument.name + "</h4></div>";
         html += "<div class='card-body'><img src=" + currentInstrument.imagePath + " class='img-fluid' alt='Responsive image'>";
@@ -20,3 +16,4 @@ function buildCards() {
     $(".img-fluid").css({"height":200,"width":200});
 
 }
+
