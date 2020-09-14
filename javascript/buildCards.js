@@ -11,7 +11,7 @@ function buildCards() {
         html += "<div class='card-body'><img src=" + currentInstrument.imagePath + " class='img-fluid' alt='Responsive image'>";
         html += "<h1><b>" + currentInstrument.price + "</b><small class='text-muted'>ILS </small></h1>";
         html += "<ul class='list-unstyled mt-3 mb-4'><li>" + currentInstrument.description + "</li>";
-        html += "</ul> <button type='button' class='btn btn-lg btn-block btn-primary'>add to chart</button></div></div></div>";
+        html += "</ul> <button type='button' class='btn btn-lg btn-block btn-primary'>add to basket <i class='fa fa-shopping-basket'></i></button></div></div></div>";
         // close every 3third card
         if (i%3==2)
             html += "</div>"

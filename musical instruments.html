@@ -2,11 +2,20 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="musical instruments.css">
     </head>
     <body onload="initailSite();">
+        <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#instruments">Music Instruments</a>
+        <a href="#news">News</a>
+        <a href="#order">My Orders</a>
+        <a href="#contact">Contact</a>
+        </div>
         <div class="sticky">
-            <select onclick="hideUnFilttered();" class="selectpicker" id="selectpicker">
+            <select onclick="onSelectedOption();" class="selectpicker" id="selectpicker">
                 <option value="" disabled selected hidden>type of musical instrument</option>
             </select>
             <h1>filter</h1>
@@ -14,20 +23,20 @@
                 <input onkeyup="onSearch();" id="search" class="form-control" type="text" placeholder="Search musical instrument" aria-label="Search">
             </div>
             <h3>price</h3>
-            <div class="checkbox">
-                <label><input type="checkbox" value="">untill 500 ILS</label>
+            <div class="checkboxDiv">
+                <label><input onclick="onCheckBoxChecked();" class="checkbox" type="checkbox" value="">untill 500 ILS</label>
             </div>
-            <div class="checkbox">
-                <label><input type="checkbox" value="">500-1000 ILS</label>
+            <div class="checkboxDiv">
+                <label><input onclick="onCheckBoxChecked();" class="checkbox" type="checkbox" value="">500-1000 ILS</label>
             </div>
-            <div class="checkbox">
-                <label><input type="checkbox" value="">1000-1500 ILS</label>
+            <div class="checkboxDiv">
+                <label><input onclick="onCheckBoxChecked();" class="checkbox" type="checkbox" value="">1000-1500 ILS</label>
             </div>
-            <div class="checkbox">
-                <label><input type="checkbox" value="">1500-2000 ILS</label>
+            <div class="checkboxDiv">
+                <label><input onclick="onCheckBoxChecked();" class="checkbox" type="checkbox" value="">1500-2000 ILS</label>
             </div>
-            <div class="checkbox">
-                <label><input type="checkbox" value="">2000 and above</label>
+            <div class="checkboxDiv">
+                <label><input onclick="onCheckBoxChecked();" class="checkbox" type="checkbox" value="">2000 and above</label>
             </div>
         </div>
         <div class="text-center">
@@ -41,12 +50,15 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="musical instruments.js" type="text/javascript"></script>
-        <script src="buildCards.js" type="text/javascript"></script>
-        <script src="createOptions.js" type="text/javascript"></script>
-        <script src="injectOptions.js" type="text/javascript"></script>
-        <script src="filterType.js" type="text/javascript"></script>
-        <script src="hideUnFilttered.js" type="text/javascript"></script>
-        <script src="onSearch.js" type="text/javascript"></script>
+        <script src="javascript/musical instruments.js" type="text/javascript"></script>
+        <script src="javascript/buildCards.js" type="text/javascript"></script>
+        <script src="javascript/createOptions.js" type="text/javascript"></script>
+        <script src="javascript/injectOptions.js" type="text/javascript"></script>
+        <script src="javascript/filterType.js" type="text/javascript"></script>
+        <script src="javascript/hideUnFilttered.js" type="text/javascript"></script>
+        <script src="javascript/onSearch.js" type="text/javascript"></script>
+        <script src="javascript/onSelectedOption.js" type="text/javascript"></script>
+        <script src="javascript/onCheckBoxChecked.js" type="text/javascript"></script>
+
     </body>
 </html>

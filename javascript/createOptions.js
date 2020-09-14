@@ -8,5 +8,3 @@ function createOptions() {
     }
     return allTypes;
 }
-
-

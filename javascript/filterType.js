@@ -10,6 +10,7 @@ function filterType()
         });
         return filtered;
     }
+    
     return undefined;
 }
 
